@@ -1,0 +1,19 @@
+ilysum HOUSE OF BOOKS
+
+
+#551a8b[purple]
+
+#ADFF2F	rgb(173,255,47)[yellow]
+
+banner : (done) res baki
+
+services we provide : (done) res baki
+
+packages :
+
+Our Team :
+
+FAQs(done) : res baki in phone view
+
+Contact Form :
+

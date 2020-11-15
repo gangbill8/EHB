@@ -1,0 +1,942 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    width: 100vw;
+}
+
+/* font-family: 'Underdog', cursive; */
+
+#banner{
+    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(imgs/pexels-wallace-chuck-3109168.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+#banner nav{
+    position: absolute;
+    top: 2%;
+    width:98vw;
+    /* position: fixed; */
+}
+#banner nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#banner nav ul li{
+    list-style-type:none;
+    margin: 0rem 0.7rem;
+}
+#banner nav ul li a{
+    text-decoration: none;
+    font-family: 'Hind Siliguri', sans-serif;
+    display: block;
+    padding: .3rem .5rem;
+    margin: auto;
+    font-size: clamp(0.5rem , 2vw , 0.8rem);
+    background-color:#551a8b ;
+    border-radius: 8px;
+    color: white;
+    transition: 0.5s ease;
+    text-align: center;
+}
+#banner nav ul li a:hover{
+    color:white;
+    opacity: 0.8;
+    transform: scale(0.9);
+}
+#banner nav ul li .contacta{
+    background-color:#551a8b ;
+    border-radius: 8px;
+    color: white;
+    transition: 0.5s ease;
+}
+#banner nav ul li .contacta:hover{
+    color: white;
+    opacity: 0.8;
+}
+
+/* - - - - - - - - - -  nav finished - -- - - - - - - - */
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#banner .centre{
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+#banner .centre .img-box{
+    background-color: rgba(255, 255, 255, 0.836);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner .centre .img-box img{
+    height: clamp(10rem , 40vw , 20rem);
+    width: clamp(10rem , 40vw , 20rem);
+}
+
+#banner .centre .desc-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+
+}
+#banner .centre .desc-box p{
+    font-family: 'Cormorant Infant', serif;
+    font-size: clamp(16px,4vw,20px);
+    text-align: center;
+    padding: 0.8rem;
+    margin: 0.8rem;
+    width: clamp(250px , 50vw ,450px);
+    opacity: 0.8;
+}
+#banner .centre .desc-box h1{
+    font-family: 'Bitter', serif;
+    border-bottom: 3px solid #551a8b;
+    padding: 0.8rem;
+    margin: 0.8rem;
+    text-align: center;
+    font-size: clamp(24px , 6vw , 40px);
+}
+#banner .centre .desc-box a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-family: 'Hind Siliguri', sans-serif;
+    border: 3px solid #551a8b;
+    padding: 0.8rem 1rem;
+    margin: 0.5rem;
+    transition: 0.5s ease;
+    margin-bottom: 1rem;
+    border-radius: 14px;
+    font-size: clamp(0.8rem , 6vw ,1.2rem);
+}
+#banner .centre .desc-box a:hover{
+    background-color: #551a8b;
+    color: white;
+    transform: scale(1.1);
+}
+/* @media (min-width:1023px){
+    #banner{
+        height: 110vh;
+    }
+    #banner .centre{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    #banner .centre .img-box{
+        margin: auto;
+    }
+    #banner .centre .desc-box{
+         margin: auto;
+    }
+} */
+/* - - -- - - - - - - - - -  banner finished - - - - - - - - - - -  */
+
+#services{
+    background: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)) , url(imgs/pexels-cottonbro-4866040.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 5rem 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+#services .ser-h1{
+    font-family: 'Bitter', serif;
+    color: rgb(255, 255, 255);
+    font-size: clamp(2rem , 6vw , 4rem);
+    display: flex;
+    justify-content: center;
+    align-items:center; 
+}
+
+.border-bottom-h2{
+    border-bottom:7px solid #551a8b;
+    width: 20vw;
+    margin: 2rem 0rem;
+    border-radius: 10%;
+}
+
+#services .services-container{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.73);
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 60vw;
+    padding: 2rem 0;
+}
+
+.first{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+#services .services-container .service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+
+
+.services-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#services .services-container .service img{
+    height: clamp(50px , 15vw , 100px);
+    width: clamp(50px , 15vw , 100px);
+    background-color: rgba(255, 255, 255, 0.53);
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 10%;
+    transition: 0.23s ease-in-out;
+}
+
+#services .services-container .service img:hover{
+    transform: scale(1.05);
+    width: 120px;
+    height: 110px;
+    cursor: pointer;
+}
+
+#services .services-container .service p{
+    color: #fff;
+    width: 55%;
+    text-align: center;
+    padding: 0.2rem;
+    font-size: 14px;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+#services .services-container .service h2{
+    padding:0.5rem;
+    color: #fff;
+    font-family: 'Cormorant Infant', serif;
+}
+
+.second{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+/*  - - - - - - - - - - - - - - - - - services finished - - - - - - - - - - - - - - - -  */
+
+#packages{
+    width: 100vw;
+}
+.packages-h1{
+    font-size: clamp(2rem , 6vw , 4rem);
+    color: #551a8b;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 40vh;
+    align-items: center;
+    font-family: 'Bitter', serif;
+}
+#packages .packages-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    transition: 0.5s ease;
+}
+#packages .packages-wrapper .tabsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#packages .packages-wrapper .tabsContainer button{
+    margin: 0.1rem -0.5rem;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+    display: block;
+    border:none;
+    outline: none;
+    transition: 0.5 ease;
+    color: #fff;
+    font-size: 16px;
+}
+.tabsContainer .tab1:hover
+{
+    color: blue;
+}
+#packages .packages-wrapper .tabsContainer .tab1{
+    border-radius: 10px;
+}
+.tab1:hover{
+    background-color: #8001f7;
+}
+#packages .packages-wrapper .tabsContainer .tab3{
+    border-radius: 10px;
+}
+
+#packages .packages-wrapper .tabsContainer .tab2{
+    border-radius: 10px;
+}
+#packages .packages-wrapper .contentContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+    margin: 1rem auto;
+}
+#packages .packages-wrapper .contentContainer .pricing-container{
+    height: 48vh;
+    width: 13rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #541a8b1c;
+    border-radius: 25px;
+    box-shadow: 4px 2px 8px #c0c0c0;
+    transition: 0.4s ease;
+}
+#packages .packages-wrapper .contentContainer .pricing-container:hover {
+    transform: scale(1.05);
+    box-shadow: 12px 6px 8px #c0c0c0;
+
+}
+#packages .packages-wrapper .contentContainer .pricing-container:hover a{
+    color: #3a066b;
+    font-weight: 500;
+}
+#packages .packages-wrapper .contentContainer .pricing-container:hover .packages-p span{
+    font-size: 3rem;
+    color: #3a066b;
+}
+#packages .packages-wrapper .contentContainer .pricing-container h3{
+    font-size: 2rem;
+    font-family: 'Cormorant Infant', serif;
+}
+#packages .packages-wrapper .contentContainer .pricing-container .packages-p{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 2rem;
+}
+#packages .packages-wrapper .contentContainer .pricing-container .packages-p span{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1.5rem;
+    transition: 0.5s ease;
+    font-weight: 900;
+}
+#packages .packages-wrapper .contentContainer .pricing-container p{
+    opacity: 0.75;
+}
+#packages .packages-wrapper .contentContainer .pricing-container a{
+    font-family: 'Hind Siliguri', sans-serif;
+    text-decoration: none;
+    display: block;
+    color: #000;
+    border: 2px solid #3a066b;
+    padding: 0.5rem 1rem;
+    transition: 0.5s ease;
+    transform-origin: left;
+    font-size: 18px;
+    border-radius: 15px;
+}
+
+#packages .packages-wrapper .contentContainer .pricing-container a:hover{
+    background-color: #551a8b;
+    color: #fff;
+    border: 2px solid #551a8b;
+
+}
+.first-tab-content{
+    display: block;
+    transition: 0.5 ease;
+}
+
+.second-tab-content{
+    display: none;
+    transition: 0.5 ease;
+
+}
+.third-tab-content{
+    display: none;
+    transition: 0.5 ease;
+
+}
+/* - - - - - - - - - - - - - - -- - - - -- - packages finished - - - - - - - - - - - - - - - - - -  */
+
+
+#about-us{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem;
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.about-image img{
+    width: 30rem;
+    padding: 2rem;
+    display: block;
+    margin: auto;
+}
+
+.about-text{
+    width: 40rem;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text p{
+    padding: 1rem;
+}
+
+#about-us .about-text h1{
+    color: #551a8b;
+    font-size: clamp(2rem , 6vw , 3rem);
+    
+    align-items: center;
+    
+    
+    font-family: 'Bitter', serif;
+}
+
+/*  - - - -- - - - - - - - -- - - - - about us styling - - - - - - -- - - - - - - - - - - - -- -  --   */
+
+#our-team{
+    
+    width: 100vw;
+    position: relative;
+    background-color: #fff;
+}
+.waves1{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: scaleY(1.5);
+    opacity: 0.6;
+}
+.waves2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: scaleY(1.5);
+    opacity: 0.5;
+
+}
+.our-h1{
+    color: #551a8b;
+    font-size: clamp(2rem , 6vw , 4rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 40vh;
+    font-family: 'Bitter', serif;
+}
+#our-team .team-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+    z-index: 100;
+    text-align: center;
+    margin: 0 auto;
+}
+#our-team .team-wrapper .teams{
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    width: 18rem;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #541a8b34;
+    border-radius: 35px;
+    padding: 2rem;
+    margin: 1.25rem;
+}
+#our-team .team-wrapper .teams h1{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 500;
+}
+#our-team .team-wrapper .teams .team-ka-banda{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: -15%;
+}
+#our-team .team-wrapper .teams h3{
+    opacity: 0.7;
+    font-family: 'Cormorant Infant', serif;
+}
+
+#our-team .team-wrapper .teams p{
+    font-family: 'Hind Siliguri', sans-serif;
+}
+#our-team .team-wrapper .teams .icons{
+    display: flex;
+    cursor: pointer;
+}
+#our-team .team-wrapper .teams .icons img{
+    height: 40px;
+    width: 40px;
+    margin: 1rem;
+    transition: 0.5s ease;
+}
+#our-team .team-wrapper .teams .icons img:hover{
+    transform: scale(0.9);
+    opacity: 0.7;
+}
+
+/* - - - - - - - - - - - - - - -  - -our-teams - - - - - - - - - - - - - - - - - */
+
+
+
+
+
+
+#faq{
+    background-color: #551a8b;
+    color: #fff;
+    position: relative;
+}
+#faq h1{
+    font-size: clamp(1rem , 6vw , 4rem);
+    text-align: center;
+    padding: 4rem 0;
+    font-family: 'Bitter', serif;
+    z-index: -3;
+}
+#faq h2{
+    text-align: center;
+}
+
+.carousel-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+summary{
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    width: 35rem;
+   border-radius: 0.5rem;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #9c32ff;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+details .faq-answer{
+    margin: 0.5rem 0;
+    padding: 0.5rem 2rem;
+    width: 33rem;
+    
+}
+
+details[open] summary ~ *{
+    animation: sweep 0.5s ease-in-out;
+} 
+
+
+.question-mark
+{
+    height: 8rem;
+    width: 8rem;
+    position: absolute;
+    opacity: 0.5;
+    transition: 0.5s ease;
+    
+}
+.one-ques{
+    transform: rotateZ(45deg)  ;
+    top: 10%;
+    left: 6%;
+    animation: questions1 8s infinite;
+}
+.two-ques{
+    
+    transform: rotateZ(-30deg);
+    height: 12rem;
+    width: 12rem;
+    top: 10%;
+    animation: questions2 8s infinite;
+    right: 4%;
+
+}
+.three-ques{
+    
+    transform: rotateZ(-30deg);
+    height: 6rem;
+    width: 6rem;
+    bottom: 10%;
+    left: 5%;
+    animation: questions1 8s infinite;
+
+}
+.four-ques{
+    
+    transform: rotateZ(30deg);
+    height: 4rem;
+    width: 4rem;
+    bottom: 10%;
+    animation: questions2 8s infinite;
+    right:5%;
+
+} 
+
+.faq-cta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.reach-us{
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #fff;
+    border:0.2px solid #fff;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    transition: 0.25s ease-in-out;
+    font-size: 20px;
+    text-align: center;
+    width: 12rem;
+    /* margin: auto; */
+    font-family: 'Hind Siliguri', sans-serif;
+
+}
+.reach-us:hover{
+    background-color: #fff;
+    color: #551a8b;
+    /* border: 0.5px solid #551a8b; */
+    padding: 1rem 3rem;
+    font-size: 20px;
+}
+@keyframes questions1 {
+    0%
+    {
+
+    }
+    50%
+    {
+
+        transform: rotateX(45deg);
+        transform: rotateY(45deg);
+        opacity: 0.3;
+    }
+    100%
+    {
+
+    }
+}
+@keyframes questions2 {
+    0%
+    {
+
+    }
+    50%
+    {
+
+        transform: rotateX(-45deg);
+        transform: rotateY(-45deg);
+        opacity: 0.1;
+    }
+    100%
+    {
+
+    }
+}
+
+/*  - - - - - - - - - - - - - - faq findhed   - - - - - - - - - - - - */
+
+#contact-form{
+    margin-top: -1rem;
+    padding: 5rem 0;
+    display: flex;
+    background-color: #551a8b;
+}
+#contact-form .left-container{
+    background-color: #fff;
+    height: 35rem;
+    width: 53vw;
+    margin: auto;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 10px 20px #090909;
+    transition: 0.5s ease;
+}
+#contact-form .left-container h1{
+    align-items: center;
+    font-size: 38px;
+    font-weight: 800;
+    font-family: 'Bitter', serif;
+    margin-bottom: 2rem;
+}
+#contact-form .left-container form{
+    height: 45vh;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#contact-form .left-container form input{
+    margin: 0.1rem;
+    padding: 0.2rem;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(85, 85, 85, 0.589);
+    outline: none;
+    width: 25rem;
+    padding: 0.7rem;
+    font-size: 16px;
+}
+#contact-form .left-container form textarea{
+    margin: 0.1rem;
+    padding: 0.2rem;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(85, 85, 85, 0.589);
+    outline: none;
+    width: 25rem;
+    padding: 0.7rem;
+    font-size: 16px;
+
+}
+#contact-form .left-container form a{
+    text-decoration: none;
+    color: rgb(41, 38, 38);
+    margin: auto;
+    display: block;
+    /* border: 0.5px solid #000; */
+    padding: 0.8rem 2.5em;
+    border-radius: 22px;
+    background-color: #551a8b;
+    color: #fff;
+    transition: 0.5s ease;
+    transform: scale(1.1);
+    margin-top:1rem;
+}
+#contact-form .left-container form a:hover{
+    transform: scale(1);
+    opacity: 0.9;
+}
+#contact-form .right-container{
+    height: 35rem;
+    width: 45vw;
+    
+    background: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.15)) , url(imgs/purple.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 10px 20px #090909;
+    border-left: none;
+}
+#contact-form .right-container .contact-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+#contact-form .right-container .contacts{
+    padding: 1.5rem;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-left: 0.5rem;
+}
+#contact-form .right-container .contacts img{
+    height: 2rem;
+    width: 2rem;
+    margin: 0.5rem;
+}
+#contact-form .right-container .contacts p{
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+#contact-form .right-container .icons {
+    display: flex;
+    /* margin: auto; */
+    transition: 0.5s ease;
+
+}
+#contact-form .right-container .icons img{
+    height: 2rem;
+    width: 2rem;
+    color: #fff;
+    margin: 2rem;
+    border-radius: 12px;
+}
+#contact-form .right-container .icons a{
+    transition: 0.54s ease;
+    font-family: 'Bitter', serif;
+}
+#contact-form .right-container .icons a:hover{
+    transform: scale(0.9);
+    opacity: 0.7;
+}
+
+/* - - - - - - - =- - - - -- - - - - - - -   - - contact-us finished  -- - - - - - - - - - - - - - - - - - - - - - - -  */
+
+#footer .footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+#footer .footer-content .links{
+    margin: 2rem;
+}
+
+#footer{
+    background-color: rgb(188, 128, 236);
+    padding: 3rem 0.5rem;
+    color: white;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+#footer h3{
+    margin-bottom: 1rem;
+}
+
+#footer ul{
+    list-style-type: none;
+}
+#footer a{
+    text-decoration: none;
+    color: rgb(235, 235, 235);
+    opacity: 1;
+}
+
+#footer a:hover{
+    opacity: 0.8;
+}
+
+#footer .copyright-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0 0 0;
+    text-align: center;
+}
+/* - - - - - - - - -- - - - -- -Footer ends here ___ - - - -- - - - - -- - - - - - - -- - - - - - - - - - - */
+/*  - - - - - - -- - - - -  --  - - - - Necessary Media Querries - -  - - - -- - - - - -  - - - - - - - -- - - - - - - - */
+
+/* Contact Form Media Querry */
+
+@media (max-width:760px){
+   #contact-form{
+       flex-direction: column;
+       align-items: center;
+   }
+   #contact-form .right-container{
+    height: 35rem;
+    width: 90vw;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 1rem;
+   }
+   #contact-form .left-container{
+    height: 35rem;
+    width: 90vw;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+   }
+   #contact-form .left-container form textarea{
+       width: 17rem;
+   }
+   #contact-form .left-container form input{
+       width: 17rem;
+   }
+   .about-image img{
+    width: 22rem;
+    
+    
+}
+}
+
+/* FAQ Form Media Querry */
+
+@media (max-width:760px){
+    summary{
+        width: 17rem;
+    }
+    details{
+        width: 17rem;
+    }
+    details .faq-answer{
+        width: 17rem;
+    }
+
+    #services .services-container .service h2{
+        font-size: 1rem;
+    }
+    #services .services-container .service p{
+        font-size: 0.6rem;
+    }
+}
