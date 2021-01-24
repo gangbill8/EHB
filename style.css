@@ -9,6 +9,10 @@ body{
     width: 100vw;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 /* font-family: 'Underdog', cursive; */
 
 #banner{
